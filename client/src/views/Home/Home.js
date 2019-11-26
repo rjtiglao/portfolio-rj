@@ -23,26 +23,28 @@ const HomePage = () => {
     <div>
       <MainContainer>
         <NavBar />
+        {/* This section will show all development apps created or maybe one per language or framework? */}
         <ColContainer gridRowStart="span 5">
           <Image src={Working2}></Image>
           <strong>
             <a href="/development">Development</a>
           </strong>
         </ColContainer>
+        {/* All Projects I've lead up to this point and teams upported. Common tools and project */}
         <ColContainer gridRowStart="span 5" gridColumnStart="2">
           <Image src={ProjectManagement}></Image>
           <strong>
-            <a href="/development">Projects</a>
+            <a href="/projects">Projects</a>
           </strong>
         </ColContainer>
+        {/* Showcase all the tools and services used. Possible examples for a few of them. */}
         <ColContainer gridRowStart="span 5" gridColumnStart="3">
           <Image src={HardwareTech}></Image>
-          <Fade left>
-            <strong>
-              <a href="/technology">Technology</a>
-            </strong>
-          </Fade>
+          <strong>
+            <a href="/technology">Technology</a>
+          </strong>
         </ColContainer>
+        {/* Everything outside of the tech world. Accomplishments outside of the tech world. Something about me. */}
         <ColContainer gridRowStart="span 5" gridColumnStart="4">
           <Image src={Working}></Image>
           <strong>

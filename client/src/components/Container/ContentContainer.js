@@ -1,37 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
 
-const ColContainer = styled.div`
+const ContentContainer = styled.div`
   display: grid;
   grid-template-rows: ${props => props.gridTemplateRows || ""};
   grid-template-columns: ${props => props.gridTemplateColumns || ""};
   grid-gap: ${props => props.gridGap || "0px"};
   margin-left: ${props => props.marginLeft || "0px"};
+  background-color: ${props => props.backgroundColor || ""};
+  height: ${props => props.bgHeight || ""};
   grid-column-start: ${props => props.gridColumnStart || ""};
+  grid-column-end: ${props => props.gridColumnEnd || ""};
   grid-row-start: ${props => props.gridRowStart || ""};
-  background-color: rgba(27, 30, 46, 0.5);
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+  grid-row-end: ${props => props.gridRowEnd || ""};
+  border-radius: ${props => props.borderRadius || ""};
   position: relative;
-
-  a {
-    z-index: 2;
-    top: 100;
+  h1 {
     color: white;
-    display: hidden;
-    font-family: "Roboto Mono", monospace;
-    text-decoration: none;
-    font-size: 30px;
   }
-  &:hover {
-    a{
-      color: black;
-    }
-    background-color: rgba(8, 8, 8, 0.75);
-  }
-}
 `;
 
-export default ColContainer;
+export default ContentContainer;

@@ -7,7 +7,7 @@ const NavBar = styled.nav`
   grid-template-rows: 1fr;
   position: absolute;
   z-index: 1;
-  background-color: rgba(8, 8, 8, 0.5);
+  background-color: rgba(27, 30, 46, 0.5);
   overflow-x: hidden;
   color: white;
   transition: 0.5s;

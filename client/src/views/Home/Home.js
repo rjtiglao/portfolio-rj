@@ -24,6 +24,18 @@ const HomePage = () => {
       <MainContainer>
         <NavBar />
         <ColContainer gridRowStart="span 5">
+          <Image src={Working2}></Image>
+          <strong>
+            <a href="/development">Development</a>
+          </strong>
+        </ColContainer>
+        <ColContainer gridRowStart="span 5" gridColumnStart="2">
+          <Image src={ProjectManagement}></Image>
+          <strong>
+            <a href="/development">Projects</a>
+          </strong>
+        </ColContainer>
+        <ColContainer gridRowStart="span 5" gridColumnStart="3">
           <Image src={HardwareTech}></Image>
           <Fade left>
             <strong>
@@ -31,17 +43,11 @@ const HomePage = () => {
             </strong>
           </Fade>
         </ColContainer>
-        <ColContainer gridRowStart="span 5" gridColumnStart="2">
-          <Image src={Working}></Image>
-          <a href="/culture">Culture</a>
-        </ColContainer>
-        <ColContainer gridRowStart="span 5" gridColumnStart="3">
-          <Image src={Working2}></Image>
-          <a href="/development">Development</a>
-        </ColContainer>
         <ColContainer gridRowStart="span 5" gridColumnStart="4">
-          <Image src={ProjectManagement}></Image>
-          <a href="/development">Projects</a>
+          <Image src={Working}></Image>
+          <strong>
+            <a href="/about">About Me</a>
+          </strong>
         </ColContainer>
       </MainContainer>
     </div>

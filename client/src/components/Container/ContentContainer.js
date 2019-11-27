@@ -15,6 +15,7 @@ const ContentContainer = styled.div`
   grid-row-end: ${props => props.gridRowEnd || ""};
   border-radius: ${props => props.borderRadius || ""};
   position: relative;
+
   h1 {
     color: white;
   }

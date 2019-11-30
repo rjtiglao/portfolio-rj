@@ -7,6 +7,8 @@ import "./style.css";
 import ProjectManagement from "../../assets/img/projectmanagment.jpg";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import Slider from "../../components/Slider/Slider";
+import Slide from "../../components/Slider/Slide";
 
 const Image = styled.img`
   max-width: 100%;
@@ -32,7 +34,7 @@ class DevPage extends Component {
               <a href="/projects">Projects</a>
             </strong>
           </ColContainer>
-          <div>hellp there</div>
+          <Slider />
         </MainContainer>
       </div>
     );

@@ -6,6 +6,7 @@
     "gatsby": "^2.17.15",
     "history": "^4.10.1",
     "react": "^16.12.0",
+    "react-animated-slider": "^1.1.4",
     "react-dom": "^16.12.0",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.1.2",

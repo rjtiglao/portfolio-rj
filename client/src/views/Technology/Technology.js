@@ -10,7 +10,6 @@ import Fade from "react-reveal/Fade";
 import TechIcons from "../../lists/TechIcons";
 import SlideView from "../../components/Slider/Slider";
 import Nodejs from "../../assets/icons/nodejs.png";
-import { isContainer } from "postcss-selector-parser";
 
 const Image = styled.img`
   max-width: 100%;
@@ -19,15 +18,11 @@ const Image = styled.img`
   position: absolute;
   width: 100%;
 `;
-const AppWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
 
 const Icon = styled.img`
   z-index: -1;
 `;
+
 class DevPage extends Component {
   constructor(props) {
     super(props);

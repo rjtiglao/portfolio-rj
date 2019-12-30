@@ -21,8 +21,9 @@ const Image = styled.img`
 const HomePage = () => {
   return (
     <div>
+      <NavBar />
       <MainContainer>
-        <NavBar />
+        
         {/* This section will show all development apps created or maybe one per language or framework? */}
         <ColContainer gridRowStart="span 5">
           <Image src={Working2}></Image>

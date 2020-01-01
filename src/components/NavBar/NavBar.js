@@ -35,8 +35,8 @@ const Nav = () => {
         <li>Ryan Tiglao</li>
       </ul>
       <List>
-        <li>Projects</li>
         <li>About</li>
+        <li>Projects</li>
         <li>Contact</li>
       </List>
     </NavBar>

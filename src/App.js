@@ -6,6 +6,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import "./index.css";
 
 //PAGES
 import MainPage from "./views/Home/Home";

@@ -22,34 +22,41 @@ const HomePage = () => {
   return (
     <div>
       <NavBar />
-      <MainContainer>
-        
+      <MainContainer gridTemplateColumns="repeat(4, 25%)">
         {/* This section will show all development apps created or maybe one per language or framework? */}
         <ColContainer gridRowStart="span 5">
           <Image src={Working2}></Image>
           <strong>
-            <a href="/development">Development</a>
+            <a href="/development">
+              <h3>Development</h3>
+            </a>
           </strong>
         </ColContainer>
         {/* All Projects I've lead up to this point and teams upported. Common tools and project */}
         <ColContainer gridRowStart="span 5" gridColumnStart="2">
           <Image src={ProjectManagement}></Image>
           <strong>
-            <a href="/projects">Projects</a>
+            <a href="/projects">
+              <h3>Projects</h3>
+            </a>
           </strong>
         </ColContainer>
         {/* Showcase all the tools and services used. Possible examples for a few of them. */}
         <ColContainer gridRowStart="span 5" gridColumnStart="3">
           <Image src={HardwareTech}></Image>
           <strong>
-            <a href="/technology">Technology</a>
+            <a href="/technology">
+              <h3>Technology</h3>
+            </a>
           </strong>
         </ColContainer>
         {/* Everything outside of the tech world. Accomplishments outside of the tech world. Something about me. */}
         <ColContainer gridRowStart="span 5" gridColumnStart="4">
           <Image src={Working}></Image>
           <strong>
-            <a href="/about">About Me</a>
+            <a href="/about">
+              <h3>About Me</h3>
+            </a>
           </strong>
         </ColContainer>
       </MainContainer>

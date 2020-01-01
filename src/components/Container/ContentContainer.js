@@ -16,6 +16,11 @@ const ContentContainer = styled.div`
   border-radius: ${props => props.borderRadius || ""};
   position: ${props => props.conPosition || ""};
   padding: ${props => props.Padding || ""};
+  margin: ${props => props.Margin || ""};
+  overflow: ${props => props.Overflow || ""};
+  justify-content: ${props => props.JustifyContent || ""};
+  align-content: ${props => props.AlignContent || ""};
+  align-items: ${props => props.AlignItems || ""};
 
   h1 {
     color: white;

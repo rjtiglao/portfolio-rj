@@ -3,13 +3,13 @@ import "../../components/NavBar/NavBar";
 import MainContainer from "../../components/Container/MainContainer";
 import NavBar from "../../components/NavBar/NavBar";
 import ContentContainer from "../../components/Container/ContentContainer";
+import Small from "../../components/Container/Small";
 import "./style.css";
 import CityBg from "../../assets/img/city.jpeg";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import TechIcons from "../../lists/TechIcons";
 import SlideView from "../../components/Slider/Slider";
-import Nodejs from "../../assets/icons/nodejs.png";
 
 const Image = styled.img`
   max-width: 100%;
@@ -31,36 +31,37 @@ class DevPage extends Component {
   render() {
     return (
       <div>
-        <MainContainer bgHeight="100vh" gridTemplateColumns="repeat(24, 1fr)">
-          <NavBar />
-          <Image src={CityBg}></Image>
+        <MainContainer bgHeight="100vh">
+          <ContentContainer>
+            <NavBar />
+            <Image src={CityBg}></Image>
 
-          <ContentContainer
-            gridRowStart="2"
-            gridRowEnd="8"
-            gridColumnStart="2"
-            gridColumnEnd="13"
-          >
-            <div>
-              <h1>TECHNOLOGY</h1>
-              <SlideView />
-            </div>
-          </ContentContainer>
-          <ContentContainer
-            gridRowStart="2"
-            gridRowEnd="5"
-            gridColumnStart="22"
-            gridColumnEnd="14"
-            backgroundColor="rgba(27, 30, 46, 0.5);"
-            Padding="20px"
-          >
-            <div>
-              <Fade right delay={1000}>
-                <h1>Helllloooooo aklsdjaslkdj</h1>
-                <p>this is a test</p>
-                <h2>asdasdas</h2>
-              </Fade>
-            </div>
+            <ContentContainer gridTemplateColumns="5% auto 5%">
+              <ContentContainer
+                gridTemplateColumns="50% 50%"
+                gridColumnStart="2"
+                JustifyContent="center"
+                AlignContent="center"
+              >
+                <Small gridColumnStart="1">
+                  <div>
+                    <h1>TECHNOLOGY</h1>
+                    <SlideView />
+                  </div>
+                </Small>
+                <Small gridColumnStart="2">
+                  <ContentContainer>
+                    <div>
+                      <Fade right delay={1000}>
+                        <h1>Helllloooooo aklsdjaslkdj</h1>
+                        <p>this is a test</p>
+                        <h2>asdasdas</h2>
+                      </Fade>
+                    </div>
+                  </ContentContainer>
+                </Small>
+              </ContentContainer>
+            </ContentContainer>
           </ContentContainer>
         </MainContainer>
       </div>

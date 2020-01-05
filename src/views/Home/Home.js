@@ -24,7 +24,7 @@ const HomePage = () => {
       <NavBar />
       <MainContainer gridTemplateColumns="repeat(4, 25%)">
         {/* This section will show all development apps created or maybe one per language or framework? */}
-        <ColContainer gridRowStart="span 5">
+        <ColContainer gridRowStart="span 5" Width="100%">
           <Image src={Working2}></Image>
           <strong>
             <a href="/development">
@@ -33,7 +33,7 @@ const HomePage = () => {
           </strong>
         </ColContainer>
         {/* All Projects I've lead up to this point and teams upported. Common tools and project */}
-        <ColContainer gridRowStart="span 5" gridColumnStart="2">
+        <ColContainer gridRowStart="span 5" gridColumnStart="2" Width="100%">
           <Image src={ProjectManagement}></Image>
           <strong>
             <a href="/projects">
@@ -42,7 +42,7 @@ const HomePage = () => {
           </strong>
         </ColContainer>
         {/* Showcase all the tools and services used. Possible examples for a few of them. */}
-        <ColContainer gridRowStart="span 5" gridColumnStart="3">
+        <ColContainer gridRowStart="span 5" gridColumnStart="3" Width="100%">
           <Image src={HardwareTech}></Image>
           <strong>
             <a href="/technology">
@@ -51,7 +51,7 @@ const HomePage = () => {
           </strong>
         </ColContainer>
         {/* Everything outside of the tech world. Accomplishments outside of the tech world. Something about me. */}
-        <ColContainer gridRowStart="span 5" gridColumnStart="4">
+        <ColContainer gridRowStart="span 5" gridColumnStart="4" Width="100%">
           <Image src={Working}></Image>
           <strong>
             <a href="/about">

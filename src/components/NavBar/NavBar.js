@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const NavBar = styled.nav`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   position: absolute;
   z-index: 1;
@@ -12,20 +11,14 @@ const NavBar = styled.nav`
   color: white;
   transition: 0.5s;
   width: 100%;
-
-  ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    list-style-type: none;
-  }
+  align-content: center;
 `;
 
 const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-start: 3;
+  grid-gap: 50%;
   list-style-type: none;
 `;
 const Nav = () => {

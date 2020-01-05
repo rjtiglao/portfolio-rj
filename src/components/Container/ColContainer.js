@@ -10,6 +10,7 @@ const ColContainer = styled.div`
   margin-left: ${props => props.marginLeft || "0px"};
   grid-column-start: ${props => props.gridColumnStart || ""};
   grid-row-start: ${props => props.gridRowStart || ""};
+  width: ${props => props.Width || ""};
   background-color: rgba(27, 30, 46, 0.5);
   height: 100vh;
   align-items: center;

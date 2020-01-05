@@ -6,6 +6,7 @@ import ContentContainer from "../../components/Container/ContentContainer";
 import Small from "../../components/Container/Small";
 import "./style.css";
 import CityBg from "../../assets/img/city.jpeg";
+import Logo from "../../assets/logo/logo-rj2.png";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import TechIcons from "../../lists/TechIcons";
@@ -45,8 +46,10 @@ class DevPage extends Component {
               >
                 <Small gridColumnStart="1">
                   <div>
-                    <h1>TECHNOLOGY</h1>
-                    <SlideView />
+                    <strong>
+                      <h1>TECHNOLOGY</h1>
+                      <SlideView />
+                    </strong>
                   </div>
                 </Small>
                 <Small gridColumnStart="2">

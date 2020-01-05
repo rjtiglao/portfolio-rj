@@ -7,7 +7,7 @@ const NavBar = styled.nav`
   grid-template-rows: 1fr;
   position: absolute;
   z-index: 1;
-  background-color: rgba(27, 30, 46, 0.5);
+  // background-color: rgba(27, 30, 46, 0.5);
   overflow-x: hidden;
   color: white;
   transition: 0.5s;
@@ -31,13 +31,16 @@ const List = styled.ul`
 const Nav = () => {
   return (
     <NavBar>
-      <ul>
-        <li>Ryan Tiglao</li>
-      </ul>
       <List>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <h3>About</h3>
+        </li>
+        <li>
+          <h3>Projects</h3>
+        </li>
+        <li>
+          <h3>Contact</h3>
+        </li>
       </List>
     </NavBar>
   );

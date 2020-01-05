@@ -13,6 +13,7 @@ const Image = styled.img`
   height: 100vh;
   z-index: -1;
   position: absolute;
+  width: 100%;
 `;
 
 class DevPage extends Component {
@@ -22,50 +23,96 @@ class DevPage extends Component {
 
   render() {
     return (
-      <div>
-        <MainContainer
-          gridTemplateRows="2fr 2fr 2fr 2fr 2fr 2fr"
-          gridTemplateColumns="1fr 1fr 1fr 1fr 1fr 1fr 1fr"
-          bgHeight="100vh"
-          //   backgroundColor="#595B67"
-          backgroundColor="rgba(white, 0.25);"
+      <MainContainer
+        gridTemplateColumns="5% 15% 20% auto 5%"
+        gridTemplateRows="150px auto 5%"
+        bgHeight="100vh"
+        backgroundColor="#595B67"
+        gridGap="15px"
+        conPosition="relative"
+        Overflow="hidden"
+      >
+        <NavBar />
+        {/* General About Me Information */}
+        <ContentContainer
+          gridColumnStart="2"
+          gridRowStart="2"
+          backgroundColor="white"
+          Border="1px solid black"
+          borderRadius="0 0 10% 0"
+          conPosition="relative"
+          bgHeight="300px"
+          Overflow="scroll"
         >
-          <NavBar />
-          <ContentContainer
-            gridRowStart="2"
-            gridRowEnd="6"
-            gridColumnStart="2"
-            gridColumnEnd="7"
-            backgroundColor="#9DC3C2"
-            bgheight="100vh"
-            borderRadius="5% 5% 0 0"
+          <Small Padding="5px">
+            <p>
+              American Native
+              <br />
+              Tech Generalist and Freelancer
+              <br />
+              <h4>Location:</h4> San Francisco Bay Area
+              <br />
+              <h4>Current Employer:</h4> Argo AI
+            </p>
+          </Small>
+        </ContentContainer>
+        {/* PHOTO AND INFORMATION */}
+        <ContentContainer
+          gridColumnStart="3"
+          gridRowStart="2"
+          backgroundColor="white"
+          Border="1px solid black"
+          conPosition="relative"
+          bgHeight="450px"
+          borderRadius="0 0 10% 0"
+        >
+          <Small
+            backgroundColor="red"
+            conPosition="relative"
+            Margin="25px 25px 25px 25px"
+            Border="1px black solid"
           >
-            <ContentContainer></ContentContainer>
-            <ContentContainer gridColumnStart="2" gridColumenEnd="3">
-              <Small>
-                <p>
-                  I'm currently working as a Systems Engineer and Freelancer
-                  within Silicon Valley. I've worked in technical operations for
-                  over a decade, for companies like Argo AI, Sheetmusicplus,
-                  Swimoutlet and Host Department.
-                </p>
-
-                <p>
-                  I'm Insaiably curious, driven to innovate, and perpetually
-                  plugged into new technologies. You can read more about me
-                  <a href="/home"> here</a>!
-                </p>
-                <p>
-                  In the meantime, thanks so much for stopping by -- and feel
-                  free to say hi through <a href="/home"> email </a>. or my
-                  <a href="https://www.linkedin.com/in/rjtiglao/"> linkedin </a>
-                  . profile.
-                </p>
-              </Small>
-            </ContentContainer>
-          </ContentContainer>
-        </MainContainer>
-      </div>
+            "Photo"
+          </Small>
+          <Small>
+            <h4>Links:</h4>
+            <a href="rtig">Linkedin</a>
+          </Small>
+        </ContentContainer>
+        {/* ABOUT ME DESCRIPTION */}
+        <ContentContainer
+          gridColumnStart="4"
+          gridRowStart="2"
+          gridRowEnd="3"
+          backgroundColor="white"
+          borderRadius="0 0 10% 0 "
+          gridTemplateRows="10% auto"
+          // Margin="0 0 25% 0"
+        >
+          <Small gridRowStart="1">
+            <h2>Description</h2>
+          </Small>
+          <Small gridRowStart="2">
+            <p>
+              I'm currently working as a Systems Engineer and Freelancer within
+              Silicon Valley. I've worked in technical operations for over a
+              decade, for companies like Argo AI, Sheetmusicplus, Swimoutlet and
+              Host Department.
+              <br />
+              <br />
+              I'm Insaiably curious, driven to innovate, and perpetually plugged
+              into new technologies. You can read more about me
+              <a href="/home"> here</a>!
+              <br />
+              <br />
+              In the meantime, thanks so much for stopping by -- and feel free
+              to say hi through <a href="/home"> email </a>. or my
+              <a href="https://www.linkedin.com/in/rjtiglao/"> linkedin </a>.
+              profile.
+            </p>
+          </Small>
+        </ContentContainer>
+      </MainContainer>
     );
   }
 }

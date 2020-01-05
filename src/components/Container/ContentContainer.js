@@ -21,7 +21,8 @@ const ContentContainer = styled.div`
   justify-content: ${props => props.JustifyContent || ""};
   align-content: ${props => props.AlignContent || ""};
   align-items: ${props => props.AlignItems || ""};
-
+  border: ${props => props.Border || ""};
+  word-wrap: ${props => props.wordWrap || ""};
   h1 {
     color: white;
   }

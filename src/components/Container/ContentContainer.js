@@ -9,6 +9,7 @@ const ContentContainer = styled.div`
   margin-left: ${props => props.marginLeft || ""};
   background-color: ${props => props.backgroundColor || ""};
   height: ${props => props.bgHeight || ""};
+  width: ${props => props.bgWidth || ""};
   grid-column-start: ${props => props.gridColumnStart || ""};
   grid-column-end: ${props => props.gridColumnEnd || ""};
   grid-row-start: ${props => props.gridRowStart || ""};

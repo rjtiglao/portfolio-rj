@@ -28,12 +28,12 @@ class DevPage extends Component {
         gridTemplateColumns="5% 15% 20% auto 5%"
         gridTemplateRows="150px auto 5%"
         bgHeight="100vh"
-        // backgroundColor="#595B67"
         gridGap="15px"
         conPosition="relative"
         Overflow="hidden"
       >
         <NavBar />
+        {/* Background Image for About Me Page */}
         <Image src={PageBackground} zIndex="-1" Height="100vh" />
         {/* General About Me Information */}
         <ContentContainer
@@ -45,6 +45,7 @@ class DevPage extends Component {
           conPosition="relative"
           bgHeight="300px"
           Overflow="scroll"
+          bgWidth="100%"
         >
           <Small Padding="5px">
             <p>
@@ -56,6 +57,9 @@ class DevPage extends Component {
               <br />
               <h4>Current Employer:</h4> Argo AI
             </p>
+            <br />
+            <h4>Links:</h4>
+            <a href="https://www.linkedin.com/in/rjtiglao/">Linkedin</a>
           </Small>
         </ContentContainer>
         {/* PHOTO AND INFORMATION */}
@@ -66,6 +70,7 @@ class DevPage extends Component {
           Border="1px solid black"
           conPosition="relative"
           bgHeight="450px"
+          bgWidth="100%"
           borderRadius="0 0 10% 0"
         >
           <Small
@@ -76,10 +81,7 @@ class DevPage extends Component {
           >
             "Photo"
           </Small>
-          <Small bgHeight="25%">
-            <h4>Links:</h4>
-            <a href="https://www.linkedin.com/in/rjtiglao/">Linkedin</a>
-          </Small>
+          <Small bgHeight="25%"></Small>
         </ContentContainer>
         {/* ABOUT ME DESCRIPTION */}
         <ContentContainer
@@ -91,7 +93,7 @@ class DevPage extends Component {
           gridTemplateRows="10% auto"
           Padding=" 15px"
           Border="1px black solid"
-          // Margin="0 0 25% 0"
+          bgWidth="100%"
         >
           <Small gridRowStart="1">
             <h2>Description</h2>

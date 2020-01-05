@@ -26,6 +26,13 @@ const SmallContainer = styled.div`
   justify-content: ${props => props.JustifyContent || ""};
   align-content: ${props => props.AlignContent || ""};
   color: ${props => props.Color || ""};
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style-type: none;
+    padding: 0;
+  }
 `;
 
 export default SmallContainer;

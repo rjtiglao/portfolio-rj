@@ -47,9 +47,10 @@ class DevPage extends Component {
           Overflow="scroll"
           bgWidth="100%"
         >
-          <Small Padding="5px">
+          <Small Padding="10px">
+            <h2>Information</h2>
             <p>
-              American Native
+              <strong>American Native</strong>
               <br />
               Tech Generalist and Freelancer
               <br />
@@ -58,8 +59,20 @@ class DevPage extends Component {
               <h4>Current Employer:</h4> Argo AI
             </p>
             <br />
+          </Small>
+          <Small>
             <h4>Links:</h4>
-            <a href="https://www.linkedin.com/in/rjtiglao/">Linkedin</a>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/rjtiglao/">Linkedin</a>
+              </li>
+              <li>
+                <a href="https://github.com/rjtiglao">Github</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/rjtiglao/">Facebook</a>
+              </li>
+            </ul>
           </Small>
         </ContentContainer>
         {/* PHOTO AND INFORMATION */}
@@ -81,7 +94,23 @@ class DevPage extends Component {
           >
             "Photo"
           </Small>
-          <Small bgHeight="25%"></Small>
+          <Small bgHeight="25%">
+            {" "}
+            <h2>Active Projects</h2>
+            <ul>
+              <li>
+                <strong>Internal Tool:</strong> Hardware Inventory Management
+                System
+              </li>
+              <li>
+                <strong>Mobile Application:</strong> What's in your kitchen?
+              </li>
+              <li>
+                <strong>Restaurant:</strong> Pamangan - Modern Filipino Food
+                Cuisine
+              </li>
+            </ul>
+          </Small>
         </ContentContainer>
         {/* ABOUT ME DESCRIPTION */}
         <ContentContainer

@@ -39,7 +39,7 @@ class DevPage extends Component {
         <ContentContainer
           gridColumnStart="2"
           gridRowStart="2"
-          backgroundColor="white"
+          backgroundColor="rgba(255,255,255, 0.5)"
           Border="1px solid black"
           borderRadius="0 0 10% 0"
           conPosition="relative"
@@ -62,7 +62,7 @@ class DevPage extends Component {
         <ContentContainer
           gridColumnStart="3"
           gridRowStart="2"
-          backgroundColor="white"
+          backgroundColor="rgba(255,255,255, 0.5)"
           Border="1px solid black"
           conPosition="relative"
           bgHeight="450px"
@@ -76,9 +76,9 @@ class DevPage extends Component {
           >
             "Photo"
           </Small>
-          <Small>
+          <Small bgHeight="25%">
             <h4>Links:</h4>
-            <a href="rtig">Linkedin</a>
+            <a href="https://www.linkedin.com/in/rjtiglao/">Linkedin</a>
           </Small>
         </ContentContainer>
         {/* ABOUT ME DESCRIPTION */}
@@ -86,7 +86,7 @@ class DevPage extends Component {
           gridColumnStart="4"
           gridRowStart="2"
           gridRowEnd="3"
-          backgroundColor="white"
+          backgroundColor="rgba(255,255,255, 0.5)"
           borderRadius="0 0 10% 0 "
           gridTemplateRows="10% auto"
           Padding=" 15px"

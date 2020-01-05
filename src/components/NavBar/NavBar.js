@@ -11,15 +11,19 @@ const NavBar = styled.nav`
   color: white;
   transition: 0.5s;
   width: 100%;
-  align-content: center;
+  justify-content: flex-end;
 `;
 
 const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 50%;
+  padding: 20px 5% 0 0;
   list-style-type: none;
+
+  li {
+    padding-left: 40px;
+  }
 `;
 const Nav = () => {
   return (

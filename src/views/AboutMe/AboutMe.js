@@ -7,11 +7,12 @@ import "./style.css";
 import Fade from "react-reveal/Fade";
 import Small from "../../components/Container/Small";
 import styled from "styled-components";
+import PageBackground from "../../assets/img/aboutme.jpeg";
 
 const Image = styled.img`
   max-width: 100%;
-  height: 100vh;
-  z-index: -1;
+  height: ${props => props.Height || ""}
+  z-index: ${props => props.zIndex || ""}
   position: absolute;
   width: 100%;
 `;
@@ -27,12 +28,13 @@ class DevPage extends Component {
         gridTemplateColumns="5% 15% 20% auto 5%"
         gridTemplateRows="150px auto 5%"
         bgHeight="100vh"
-        backgroundColor="#595B67"
+        // backgroundColor="#595B67"
         gridGap="15px"
         conPosition="relative"
         Overflow="hidden"
       >
         <NavBar />
+        <Image src={PageBackground} zIndex="-1" Height="100vh" />
         {/* General About Me Information */}
         <ContentContainer
           gridColumnStart="2"
@@ -87,6 +89,8 @@ class DevPage extends Component {
           backgroundColor="white"
           borderRadius="0 0 10% 0 "
           gridTemplateRows="10% auto"
+          Padding=" 15px"
+          Border="1px black solid"
           // Margin="0 0 25% 0"
         >
           <Small gridRowStart="1">

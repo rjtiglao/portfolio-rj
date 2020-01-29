@@ -33,37 +33,35 @@ class DevPage extends Component {
     return (
       <div>
         <MainContainer bgHeight="100vh">
-          <ContentContainer>
-            <NavBar />
-            <Image src={CityBg}></Image>
+          <NavBar />
+          <Image src={CityBg}></Image>
 
-            <ContentContainer gridTemplateColumns="5% auto 5%">
-              <ContentContainer
-                gridTemplateColumns="50% 50%"
-                gridColumnStart="2"
-                JustifyContent="center"
-                AlignContent="center"
-              >
-                <Small gridColumnStart="1">
+          <ContentContainer>
+            <ContentContainer
+              gridTemplateColumns="50% 50%"
+              gridColumnStart="2"
+              JustifyContent="center"
+              AlignContent="center"
+            >
+              <Small gridColumnStart="1">
+                <div>
+                  <strong>
+                    <h1>TECHNOLOGY</h1>
+                    <SlideView />
+                  </strong>
+                </div>
+              </Small>
+              <Small gridColumnStart="2">
+                <ContentContainer>
                   <div>
-                    <strong>
-                      <h1>TECHNOLOGY</h1>
-                      <SlideView />
-                    </strong>
+                    <Fade right delay={1000}>
+                      <h1>Helllloooooo aklsdjaslkdj</h1>
+                      <p>this is a test</p>
+                      <h2>asdasdas</h2>
+                    </Fade>
                   </div>
-                </Small>
-                <Small gridColumnStart="2">
-                  <ContentContainer>
-                    <div>
-                      <Fade right delay={1000}>
-                        <h1>Helllloooooo aklsdjaslkdj</h1>
-                        <p>this is a test</p>
-                        <h2>asdasdas</h2>
-                      </Fade>
-                    </div>
-                  </ContentContainer>
-                </Small>
-              </ContentContainer>
+                </ContentContainer>
+              </Small>
             </ContentContainer>
           </ContentContainer>
         </MainContainer>

@@ -89,7 +89,7 @@ class DevPage extends Component {
           <Small
             backgroundColor="red"
             conPosition="relative"
-            Margin="25px 25px 25px 25px"
+            Margin="5%"
             Border="1px black solid"
           >
             "Photo"

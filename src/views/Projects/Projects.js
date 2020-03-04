@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import "../../components/NavBar/NavBar";
 import MainContainer from "../../components/Container/MainContainer";
+import ContentContainer from "../../components/Container/ContentContainer";
 import NavBar from "../../components/NavBar/NavBar";
-import ColContainer from "../../components/Container/ColContainer";
 import "./style.css";
-import ProjectManagement from "../../assets/img/projectmanagment.jpg";
-import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import Slider from "../../components/Slider/Slider";
-import Slide from "../../components/Slider/Slide";
+import Small from "../../components/Container/Small";
+import styled from "styled-components";
+import PageBackground from "../../assets/img/ideas.jpeg";
+import SlideView from "../../components/Slider/Slider2";
 
 const Image = styled.img`
   max-width: 100%;
-  height: 100vh;
-  z-index: -1;
+  height: ${props => props.Height || ""}
+  z-index: ${props => props.zIndex || ""}
   position: absolute;
-  background-repeat: repeat-y;
+  width: 100%;
 `;
 
 class DevPage extends Component {
@@ -25,18 +25,37 @@ class DevPage extends Component {
 
   render() {
     return (
-      <div>
-        <MainContainer>
-          <NavBar />
-          <ColContainer gridRowStart="span 5" gridColumnStart="span 2">
-            <Image src={ProjectManagement}></Image>
-            <strong>
-              <a href="/projects">Projects</a>
-            </strong>
-          </ColContainer>
-          <Slider />
-        </MainContainer>
-      </div>
+      <MainContainer
+        gridTemplateColumns="5% 15% 20% auto 5%"
+        gridTemplateRows="150px auto 5%"
+        bgHeight="100vh"
+        gridGap="15px"
+        conPosition="relative"
+        Overflow="hidden"
+      >
+        <NavBar />
+        {/* Background Image for About Me Page */}
+        <Image src={PageBackground} zIndex="-1" Height="100vh" />
+        {/* General About Me Information */}
+        <ContentContainer
+          gridColumnStart="4"
+          gridRowStart="2"
+          // backgroundColor="black"
+        >
+          <Small
+            conPosition="absolute"
+            justifyContent="center"
+            alignContent="center"
+          >
+            <div>
+              <strong>
+                <h1>TECHNOLOGY</h1>
+                <SlideView />
+              </strong>
+            </div>
+          </Small>
+        </ContentContainer>
+      </MainContainer>
     );
   }
 }

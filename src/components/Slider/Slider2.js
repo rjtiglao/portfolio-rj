@@ -3,23 +3,31 @@ import styled from "styled-components";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "./slider-animations1.css";
-import "./style.css";
-import content from "./Content";
+import "./style2.css";
 
 const Wrapper = styled.div`
   width: 100%;
+  background-color: "red";
+  font: white;
 `;
+const content2 = [
+  {
+    description: "Developer Projects"
+  },
+  {
+    description: "Operations Projects"
+  },
+  {
+    description: "Project Management"
+  },
+  {
+    description: "Entrepreneur Projects"
+  }
+];
 
-const image = content.map((content, i) => <img src={content.image[i]}></img>);
-
-const listcontent = content.map(content => (
+const content = content2.map(content => (
   <div>
     <h1>{content["title"]}</h1>
-    <p>{content["description"]}</p>
-    {/* <div>{image}</div> */}
-    {image}
-    {/* <img src={content["image"]}></img> */}
-    {/* <img src={images[0]}></img> */}
   </div>
 ));
 
@@ -41,8 +49,12 @@ class SlideView extends Component {
       next: "next"
     };
     return (
-      <Wrapper>
-        <Slider {...settings}>{listcontent}</Slider>
+      <Wrapper back>
+        <Slider {...settings}>
+          {content2.map(content => (
+            <h1>{content["description"]}</h1>
+          ))}
+        </Slider>
       </Wrapper>
     );
   }
